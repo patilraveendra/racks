@@ -2,40 +2,40 @@
 
     <ng-container matColumnDef="rackcode">
         <th mat-header-cell *matHeaderCellDef> Rack Code. </th>
-        <td mat-cell *matCellDef="let element"> {{element.rackcode}} </td>
+        <td mat-cell *matCellDef="let element"> {{element.Id}} </td>
     </ng-container>
 
     <ng-container matColumnDef="description">
         <th mat-header-cell *matHeaderCellDef> Description </th>
-        <td mat-cell *matCellDef="let element"> {{element.description}} </td>
+        <td mat-cell *matCellDef="let element"> {{element.Description}} </td>
     </ng-container>
 
     <ng-container matColumnDef="capacity">
         <th mat-header-cell *matHeaderCellDef> Capacity </th>
-        <td mat-cell *matCellDef="let element"> {{element.capacity}} </td>
+        <td mat-cell *matCellDef="let element"> {{element.Capacity}} </td>
     </ng-container>
 
     <ng-container matColumnDef="default">
         <th mat-header-cell *matHeaderCellDef> Default </th>
-        <td mat-cell *matCellDef="let element"> {{element.default}} </td>
+        <td mat-cell *matCellDef="let element"> {{element.IsDefault}} </td>
     </ng-container>
 
     <ng-container matColumnDef="inactive">
-        <th mat-header-cell *matHeaderCellDef> InActive </th>
-        <td mat-cell *matCellDef="let element"> {{element.inactive}} </td>
+        <th mat-header-cell *matHeaderCellDef> Code </th>
+        <td mat-cell *matCellDef="let element"> {{element.Code}} </td>
     </ng-container>
 
     <ng-container matColumnDef="edit">
         <th mat-header-cell *matHeaderCellDef> </th>
         <td mat-cell *matCellDef="let element">
-            <button mat-button color="primary" (click)="editRack(element.rackcode)">Edit</button>
+            <button mat-button color="primary" (click)="editRack(element.Id)">Edit</button>
         </td>
     </ng-container>
 
     <ng-container matColumnDef="delete">
         <th mat-header-cell *matHeaderCellDef> </th>
         <td mat-cell *matCellDef="let element"> <button mat-button color="primary"
-                (click)="deleteRack(element.rackcode)">Delete</button> </td>
+                (click)="deleteRack(element.Id)">Delete</button> </td>
     </ng-container>
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
