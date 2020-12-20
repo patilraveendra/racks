@@ -18,6 +18,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatTableModule } from '@angular/material/table';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { MatTableModule } from '@angular/material/table';
     MatButtonModule,
     MatInputModule,
     MatSlideToggleModule,
-    MatTableModule
+    MatTableModule,
+    HttpClientModule,
+    FormsModule, ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
