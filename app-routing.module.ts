@@ -11,7 +11,7 @@ const routes: Routes = [
 
   { path: '', redirectTo: '/racks', pathMatch: 'full' },
   {
-    path: 'racks-list', component: RackListComponent,
+    path: 'rack-list', component: RackListComponent,
     children: [
       { path: 'edit-rack/:id', component: RackEditComponent }
     ]

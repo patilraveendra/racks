@@ -20,6 +20,9 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatTableModule } from '@angular/material/table';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatDialogModule} from '@angular/material/dialog';
+import { ConfirmationdialogComponent } from './confirmationdialog/confirmationdialog.component';
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     GodownListComponent,
     GodownAddComponent,
     GodownEditComponent,
-    NavbarComponent
+    NavbarComponent,
+    ConfirmationdialogComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +48,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatSlideToggleModule,
     MatTableModule,
     HttpClientModule,
-    FormsModule, ReactiveFormsModule
+    FormsModule, ReactiveFormsModule,
+    MatDialogModule,
+    MatPaginatorModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
